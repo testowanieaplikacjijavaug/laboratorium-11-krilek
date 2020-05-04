@@ -29,7 +29,7 @@ public class AjaxTest {
     public static void setUpDriver(){
         WebDriverManager.firefoxdriver().setup();
         FirefoxOptions options = new FirefoxOptions();
-//        options.setHeadless(true);
+        options.setHeadless(true);
         options.addPreference("intl.accept_languages", "en");
         driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
